@@ -1,8 +1,11 @@
-var num_1 = window.prompt("Please enter your shoe size");
-var num_2 = window.prompt("Please enter your birthday");
-var result;
-function multiple(){
-    result = ((num_1 * 2) + 5)* 50 - num_2 + 1766
+var currentButton = document.querySelector("button");
+
+currentButton.onclick = function multiple(){
+
+    var shoe_size = document.querySelector("#shoe_size").value,
+        year = document.querySelector("#year").value;
+
+    result = ((shoe_size * 2) + 5)* 50 - year + 1766
     alert("the result is: " + result)
 };
 multiple();
