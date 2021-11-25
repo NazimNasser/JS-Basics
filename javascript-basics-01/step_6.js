@@ -1,4 +1,9 @@
-var num_1 = window.prompt("Please enter number");
-var num_2 = window.prompt("Please enter second number");
+var currentButton = document.querySelector("button");
 
-alert(num_1/num_2);
+currentButton.onclick = function(){
+
+    var first_number = document.querySelector("#first_number").value,
+    second_number = document.querySelector("#second_number").value;
+
+    alert(first_number / second_number);
+};
