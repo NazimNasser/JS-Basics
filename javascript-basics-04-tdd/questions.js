@@ -57,45 +57,51 @@ return parseFloat((weight / (height * height)).toFixed(2));
 }
 
 const createLanguagesArray = () => {
-
+return myArray = ["Html","CSS","Java","PHP"];
 }
 
 const createNumbersArray = () => {
-
+return myArray = [0,1,2,3,4,5];
 }
 
 const replaceElement = (languages) => {
-
+languages.splice(2, 1, "Javascript");
+return languages;
 }
 
 const addElement = (languages) => {
-
+languages.push('Ruby', 'Python');
+return languages;
 }
 
 const addNumberElement = (numbers) => {
-
+numbers.unshift(-2, -1);
+return numbers;
 }
 
 const removeFirst = (languages) => {
-
+languages.shift();
+return languages;
 }
 
 const removeLast = (languages) => {
-
+languages.pop();
+return languages;
 }
 
 const convertStrToArr = (social_arr) => {
-
+var myArray = social_arr.split(",");
+return myArray;
 }
 
 const convertArrToStr = (languages) => {
-
+return languages.toString();
 }
 
 const sortArr = (social_arr) => {
-
+return social_arr.sort();
 }
 
 const invertArr = (social_arr) => {
-
+return social_arr.reverse();
 }
